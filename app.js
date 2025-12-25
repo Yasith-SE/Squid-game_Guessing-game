@@ -1,13 +1,21 @@
+    let randomNumbers = Math.floor(Math.random()*10)+1
+
+
 function Clickbutton(){
     
-    let LblId = document.getElementById("result");
-    let btnText  = document.getElementById("txtGuessNumber");
 
 
-    LblId.innerText = btnText.value;
-         
+    let LblId    = document.getElementById("result");
+    let btnText  = document.getElementById("txtGuessNumber").value;
 
-    console.log(Math.floor(Math.random()*10)+1);
+    if(randomNumbers == btnText){
+      
+        LblId.innerText = 'WIn';
+    }
+    console.log(randomNumbers);
+    
+
+    
     
 
 
